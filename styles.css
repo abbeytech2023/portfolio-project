@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* .menu {
+  font-size: 6rem;
+  font-weight: 600;
+  color: blue;
+  display: none;
+} */
+
+.header {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(51, 17, 4);
+  background-color: rgb(118, 168, 168);
+  /* background: linear-gradient(to right, rgb(34, 82, 82), rgb(196, 213, 251)); */
+  padding: 2.5rem;
+  color: #fff;
+}
+
+.btn-mobile-nav {
+  display: none;
+  z-index: 3;
+}
+
+.btn:link {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1.6rem;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgb(12, 49, 49);
+}
+
+.btn:link:hover {
+  background-color: rgb(11, 27, 27);
+}
+
+.btn-project:link {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 28px;
+  background-color: rgb(89, 8, 89);
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  list-style: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #fff;
+  /* color: #000; */
+}
+
+.last-nav-link {
+  background-color: #225252;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.con-header {
+  max-width: 140rem;
+  height: 60rem;
+  background-image: url(images/Screenshot_20231126-111.png),
+    linear-gradient(to right, rgb(34, 82, 82), rgb(196, 213, 251));
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+
+  background-color: #ff00b7;
+}
+
+/*********************************************/
+/* ****************  Hero section ************************ */
+
+.container-hero {
+  width: 120rem;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* color: rgb(196, 213, 251); */
+  color: #fff;
+
+  /* background-color: orangered; */
+  transform: translate(-50%, -50%);
+  /* padding: 5rem; */
+  /* padding-top: 70rem; */
+}
+
+.inner-container {
+  width: 50%;
+}
+
+.inner-container h1 {
+  margin-bottom: 3rem;
+  line-height: 1.3;
+}
+
+.inner-container p {
+  margin-bottom: 3rem;
+}
+
+h1 span {
+  background-color: rgb(1, 30, 87);
+  color: rgb(1, 30, 87);
+  color: #fff;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+}
+
+/************* ABOUT SECTION******************/
+.section-about {
+  padding-top: 9.6rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about {
+  color: #000;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 90%;
+  border-radius: 1.5rem;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 6rem;
+  font-weight: 600;
+  /* color: #fff; */
+  color: rgb(1, 30, 87);
+}
+
+.sub-title-desrription {
+  font-size: 2.5rem;
+}
+
+.tab-titles {
+  display: flex;
+  gap: 5px;
+  margin: 2rem 0 4rem;
+  font-size: 4rem;
+}
+
+.tab-links {
+  margin-right: 5;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(1, 30, 87);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+  background-color: rgb(1, 30, 87);
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.tab-contents ul li span {
+  color: #011e57;
+  font-size: 1.8rem;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* **************** Section MYWORK ********************* */
+
+#portfolio {
+  padding: 5rem 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: auto;
+
+  grid-gap: 4rem;
+  margin-top: 5rem;
+  /* background-color: red;
+  color: blue; */
+}
+
+.work {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ff00b7;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(
+    to right,
+    rgba(221, 86, 183, 0.83),
+    rgb(107, 94, 94)
+  );
+  /* background-color: rgba(218, 165, 32, 0.615); */
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.sticky nav {
+  position: fixed;
+  top: 0;
+  padding: rem 8rem;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(22, 17, 17, 0.889);
+  z-index: 999;
+}
+
+.sticky .section-hero {
+  margin-top: 12rem;
+}
+
+.layer a:link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #ff00b7;
+  text-decoration: none;
+  font-size: 1.8rem;
+  background-color: red;
+  width: 22rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.mywork-btn {
+  display: block;
+  margin: 5rem auto;
+  width: fit-content;
+  border: 1px solid rgb(115, 87, 16);
+  padding: 1.4rem 5rem;
+  border-radius: 6rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(115, 87, 16);
+}
