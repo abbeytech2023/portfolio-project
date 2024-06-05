@@ -73,8 +73,10 @@ nav {
 }
 
 .logo {
-  font-size: 28px;
-  background-color: rgb(89, 8, 89);
+  font-size: 3.2rem;
+  font-weight: 700;
+  background-color: rgb(1, 30, 87);
+  padding: 2rem 3rem;
 }
 
 .main-nav-list {
@@ -153,7 +155,7 @@ h1 span {
 
 /************* ABOUT SECTION******************/
 .section-about {
-  padding-top: 9.6rem;
+  margin-top: 20rem;
 }
 
 .row {
@@ -179,10 +181,12 @@ h1 span {
 }
 
 .sub-title {
-  font-size: 6rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
   /* color: #fff; */
   color: rgb(1, 30, 87);
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .sub-title-desrription {
@@ -241,8 +245,12 @@ h1 span {
 
 /* **************** Section MYWORK ********************* */
 
+.section-portfolio {
+  margin-top: 20rem;
+  padding: 0 3rem;
+}
+
 #portfolio {
-  padding: 5rem 0;
 }
 
 .work-list {
@@ -273,12 +281,13 @@ h1 span {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(221, 86, 183, 0.83),
     rgb(107, 94, 94)
-  );
+  ); */
   /* background-color: rgba(218, 165, 32, 0.615); */
+  background-color: rgb(196, 213, 251);
   font-size: 2.4rem;
   border-radius: 1rem;
   position: absolute;
@@ -317,12 +326,12 @@ h1 span {
 .layer a:link {
   display: inline-block;
   margin-top: 2rem;
-  color: #ff00b7;
   text-decoration: none;
   font-size: 1.8rem;
-  background-color: red;
+  background-color: rgb(1, 30, 87);
+  color: #fff;
   width: 22rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   text-align: center;
 }
 
@@ -330,18 +339,29 @@ h1 span {
   transform: scale(1.1);
 }
 
+.work-link {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+}
+
 .work:hover .layer {
   height: 100%;
+}
+
+.rest {
+  display: none;
 }
 
 .mywork-btn {
   display: block;
   margin: 5rem auto;
   width: fit-content;
-  border: 1px solid rgb(115, 87, 16);
+  font-size: 2rem;
   padding: 1.4rem 5rem;
   border-radius: 6rem;
   text-decoration: none;
   color: #fff;
-  background-color: rgb(115, 87, 16);
+  background-color: rgb(12, 49, 49);
 }

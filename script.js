@@ -3,7 +3,7 @@ const tabLink = document.querySelectorAll(".tab-links");
 const tabTitle = document.querySelector(".tab-titles");
 const mobileNav = document.querySelector(".btn-mobile-nav");
 
-console.log(tabLink);
+// console.log(tabLink);
 
 // Smooth scroll into section
 document
@@ -88,6 +88,19 @@ const navigation = document.querySelector("nav");
 mobileNav.addEventListener("click", function (e) {
   e.preventDefault();
   navigation.classList.toggle("mobile-nav");
+});
+
+const btnSeeMore = document.querySelector(".mywork-btn");
+const work = document.querySelectorAll(".work");
+
+btnSeeMore.addEventListener("click", function (e) {
+  e.preventDefault();
+  work.forEach((wrk) => {
+    wrk.classList.contains("rest")
+      ? (btnSeeMore.textContent = "View less")
+      : (btnSeeMore.textContent = "View more");
+    wrk.classList.toggle("rest");
+  });
 });
 
 //////////////////////////////////////////////////////////////////////////////////
