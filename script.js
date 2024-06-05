@@ -2,6 +2,7 @@ const tabContents = document.querySelectorAll(".tab-contents");
 const tabLink = document.querySelectorAll(".tab-links");
 const tabTitle = document.querySelector(".tab-titles");
 const mobileNav = document.querySelector(".btn-mobile-nav");
+const logo = document.querySelector(".logo");
 
 // console.log(tabLink);
 
@@ -69,6 +70,7 @@ const obs = new IntersectionObserver(
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
       navList.style.display = "none";
+      logo.style.padding = "1rem";
     }
   },
   {

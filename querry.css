@@ -162,6 +162,11 @@
   .tab-links {
     font-size: 2.5rem;
   }
+
+  .layer {
+    font-size: 2.1rem;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 650px) {
@@ -279,6 +284,11 @@
   .worklist {
     grid-gap: 9rem;
   }
+
+  .layer {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 417px) {
@@ -313,5 +323,10 @@
 
   .btn-hire-project {
     margin-left: -2.5rem;
+  }
+
+  .layer {
+    font-size: 1.6rem;
+    line-height: 1.4;
   }
 }

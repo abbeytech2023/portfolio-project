@@ -14,13 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-/* .menu {
-  font-size: 6rem;
-  font-weight: 600;
-  color: blue;
-  display: none;
-} */
-
 .header {
   position: relative;
 }
@@ -281,12 +274,7 @@ h1 span {
 .layer {
   width: 100%;
   height: 0;
-  /* background: linear-gradient(
-    to right,
-    rgba(221, 86, 183, 0.83),
-    rgb(107, 94, 94)
-  ); */
-  /* background-color: rgba(218, 165, 32, 0.615); */
+
   background-color: rgb(196, 213, 251);
   font-size: 2.4rem;
   border-radius: 1rem;
@@ -343,7 +331,8 @@ h1 span {
   text-align: center;
   color: #fff;
   font-size: 1.8rem;
-  padding-top: 2rem;
+  padding-top: 0 1.7rem;
+  font-weight: 600;
 }
 
 .work:hover .layer {
