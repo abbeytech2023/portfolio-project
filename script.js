@@ -1,6 +1,3 @@
-const tabContents = document.querySelectorAll(".tab-contents");
-const tabLink = document.querySelectorAll(".tab-links");
-const tabTitle = document.querySelector(".tab-titles");
 const mobileNav = document.querySelector(".btn-mobile-nav");
 const logo = document.querySelector(".logo");
 
@@ -40,9 +37,16 @@ allSections.forEach((section) => {
 const hideSection = document.querySelector(".hide-section");
 console.log(hideSection);
 
+const tabContents = document.querySelectorAll(".tab-contents");
+const tabLink = document.querySelectorAll(".tab-links");
+const tabTitle = document.querySelector(".tab-titles");
+
 tabTitle.addEventListener("click", function (e) {
+  //Removing the default active-link
   tabLink.forEach((tab) => tab.classList.remove("active-link"));
+  // e.target.closest is used to select the closest tablink that is clicked on
   e.target.closest(".tab-links").classList.add("active-link");
+
   tabContents.forEach((tab) => tab.classList.remove("active-tab"));
 
   console.log(e.target);
@@ -98,10 +102,10 @@ const work = document.querySelectorAll(".work");
 btnSeeMore.addEventListener("click", function (e) {
   e.preventDefault();
   work.forEach((wrk) => {
+    wrk.classList.toggle("rest");
     wrk.classList.contains("rest")
       ? (btnSeeMore.textContent = "View less")
-      : (btnSeeMore.textContent = "View more");
-    wrk.classList.toggle("rest");
+      : (btnSeeMore.textContent = "View More");
   });
 });
 

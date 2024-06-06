@@ -82,6 +82,13 @@ nav {
   list-style: none;
 }
 
+.main-nav-link:hover {
+  border: 1px solid #fff;
+  padding: 1rem;
+  color: #fff;
+  background-color: #011e57;
+}
+
 .main-nav-link {
   text-decoration: none;
   color: #fff;
@@ -341,6 +348,10 @@ h1 span {
 
 .rest {
   display: none;
+}
+
+.few {
+  display: block;
 }
 
 .mywork-btn {
