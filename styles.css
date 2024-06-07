@@ -268,7 +268,11 @@ h1 span {
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
-  background-color: #ff00b7;
+  box-shadow: 7px 3px 8px rgba(85, 85, 85, 0.487);
+}
+
+.work:hover {
+  box-shadow: 10px 7px 15px;
 }
 
 .work img {
@@ -283,17 +287,17 @@ h1 span {
   height: 0;
 
   background-color: rgb(196, 213, 251);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   border-radius: 1rem;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -40px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 4rem;
+  padding: 2rem 2rem;
   text-align: center;
   transition: 0.5s;
 }
@@ -344,14 +348,11 @@ h1 span {
 
 .work:hover .layer {
   height: 100%;
+  box-shadow: none;
 }
 
 .rest {
   display: none;
-}
-
-.few {
-  display: block;
 }
 
 .mywork-btn {

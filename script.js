@@ -98,12 +98,13 @@ mobileNav.addEventListener("click", function (e) {
 
 const btnSeeMore = document.querySelector(".mywork-btn");
 const work = document.querySelectorAll(".work");
+const workShow = document.querySelectorAll(".work-show");
 
 btnSeeMore.addEventListener("click", function (e) {
   e.preventDefault();
-  work.forEach((wrk) => {
+  workShow.forEach((wrk) => {
     wrk.classList.toggle("rest");
-    wrk.classList.contains("rest")
+    !wrk.classList.contains("rest")
       ? (btnSeeMore.textContent = "View less")
       : (btnSeeMore.textContent = "View More");
   });
