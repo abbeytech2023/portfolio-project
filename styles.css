@@ -41,28 +41,30 @@ nav {
 
 .btn:link {
   display: inline-block;
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 1.6rem;
   margin-right: 1rem;
   padding: 1rem 2rem;
-  background-color: rgb(12, 49, 49);
+  background-color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 .btn:link:hover {
-  background-color: rgb(11, 27, 27);
+  background-color: rgb(196, 213, 251);
 }
 
 .btn-project:link {
   background-color: transparent;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 .btn {
-  color: #fff;
+  color: #000;
   border-radius: 2rem;
   text-transform: uppercase;
+  border: 1px solid #fff;
 }
 
 .logo {
@@ -104,18 +106,12 @@ nav {
 .con-header {
   max-width: 140rem;
   height: 60rem;
-  background: linear-gradient(
-      to right,
-      rgb(34, 82, 82),
-      rgba(50, 59, 79, 0.525)
-    ),
+  background: linear-gradient(to right, rgb(34, 82, 82), rgba(0, 0, 0, 0.714)),
     url(images/Screenshot_20231126-111.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
-
-  /* background-color: #ff00b7; */
 }
 
 /*********************************************/
