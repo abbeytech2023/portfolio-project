@@ -104,14 +104,18 @@ nav {
 .con-header {
   max-width: 140rem;
   height: 60rem;
-  background-image: url(images/Screenshot_20231126-111.png),
-    linear-gradient(to right, rgb(34, 82, 82), rgb(196, 213, 251));
+  background: linear-gradient(
+      to right,
+      rgb(34, 82, 82),
+      rgba(50, 59, 79, 0.525)
+    ),
+    url(images/Screenshot_20231126-111.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
 
-  background-color: #ff00b7;
+  /* background-color: #ff00b7; */
 }
 
 /*********************************************/
