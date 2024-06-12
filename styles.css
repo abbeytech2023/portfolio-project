@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   font-family: sans-serif;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -35,6 +36,14 @@ nav {
 .btn-mobile-nav {
   display: none;
   z-index: 3;
+}
+
+.btn-close-nav {
+  display: none;
+}
+
+button {
+  background: none;
 }
 
 .btn:link {
@@ -334,6 +343,10 @@ h1 span {
   margin-bottom: 1rem;
 }
 
+.layer p span {
+  color: red;
+}
+
 .sticky nav {
   position: fixed;
   top: 0;
@@ -392,4 +405,154 @@ h1 span {
   text-decoration: none;
   color: #fff;
   background-color: rgb(12, 49, 49);
+}
+
+/* **************** About ME *************************** */
+
+#Contact-me {
+  padding-top: 20rem;
+}
+
+.container-contact {
+  max-width: 100%;
+  /* height: 80rem; */
+  display: flex;
+  justify-content: center;
+}
+
+.profile-cart {
+  max-width: 120rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 3rem;
+  margin-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.details-box div {
+  width: 20rem;
+  /* border: 1px solid black; */
+}
+
+.details-box p {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.head-greet {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.description-header {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.prof-img img {
+  width: 100%;
+  /* height: 12rem; */
+}
+
+.label {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+
+.label h3 {
+  width: 25rem;
+  font-size: 2.6rem;
+}
+
+.description {
+  margin-top: 4rem;
+  font-size: 2.1rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 799px) {
+  .about-me {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 602px) {
+  .profile-cart {
+    gap: 0;
+  }
+  .photo-box {
+    justify-content: center;
+  }
+
+  .prof-img img {
+    width: 70%;
+  }
+
+  .label {
+    gap: 2rem;
+  }
+
+  .label h3 {
+    width: 15rem;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 542px) {
+  .profile-cart {
+    flex-direction: column;
+  }
+
+  .about-me {
+    font-size: 1.8rem;
+  }
+
+  .label {
+    gap: 3rem;
+  }
+
+  .description {
+    display: none;
+    position: absolute;
+  }
+
+  .label h3 {
+    width: 15rem;
+  }
+
+  .label p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .prof-img img {
+    width: 50%;
+  }
+
+  .label {
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .about-me {
+    font-size: 1.6rem;
+  }
+
+  .label h3 {
+    width: 11rem;
+  }
 }

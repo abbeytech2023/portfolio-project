@@ -4,23 +4,38 @@ const logo = document.querySelector(".logo");
 // console.log(tabLink);
 
 // Smooth scroll into section
-document
-  .querySelector(".main-nav-link")
-  .addEventListener("click", function (e) {
+// document
+//   .querySelector(".main-nav-link")
+//   .addEventListener("click", function (e) {
+//     e.preventDefault();
+//     if (e.target.closest(".main-nav-link")) {
+//       console.log(e.target);
+//       const id = e.target.getAttribute("href");
+//       console.log(id);
+//       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+//     }
+//   });
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
-    if (e.target.closest(".main-nav-link")) {
-      const id = e.target.getAttribute("href");
-      console.log(id);
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    const href = link.getAttribute("href");
+    if (href === "#") window.scrollTo({ top: 0, behaviour: "smooth" });
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
     }
   });
+});
 
 //Reveal on Scroll
 const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
   entries.forEach((entry) => {
-    console.log(entry.target);
+    // console.log(entry.target);
     if (entry.isIntersecting) entry.target.classList.remove("hide-section");
   });
 };
@@ -51,7 +66,7 @@ tabTitle.addEventListener("click", function (e) {
 
   console.log(e.target);
   tabContents.forEach((tab) => {
-    console.log(tab.id);
+    // console.log(tab.id);
     if (tab.id === e.target.textContent) tab.classList.add("active-tab");
     // console.log(tab);
   });
@@ -59,7 +74,7 @@ tabTitle.addEventListener("click", function (e) {
 
 //----------------------Sticky Nav----------------------/
 const sectionHero = document.querySelector(".con-header");
-console.log(sectionHero);
+// console.log(sectionHero);
 const navList = document.querySelector(".main-nav-list");
 console.log(navList);
 
