@@ -521,7 +521,8 @@ h1 span {
   }
 
   .label {
-    gap: 3rem;
+    gap: 2rem;
+    padding: 0 3rem;
   }
 
   .description {
@@ -538,14 +539,10 @@ h1 span {
   }
 }
 
-@media (max-width: 360px) {
-  .prof-img img {
-    width: 50%;
-  }
-
+@media (max-width: 440px) {
   .label {
     gap: 3rem;
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
 
   .about-me {
@@ -554,5 +551,11 @@ h1 span {
 
   .label h3 {
     width: 11rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .label {
+    margin-left: 6rem;
   }
 }
