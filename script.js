@@ -88,7 +88,7 @@ const obs = new IntersectionObserver(
     }
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
-      // navList.style.display = "none";
+      navList.style.display = "none";
       logo.style.padding = "1rem";
     }
   },
