@@ -16,19 +16,19 @@ const logo = document.querySelector(".logo");
 //     }
 //   });
 
-const allLinks = document.querySelectorAll("a:link");
+// const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    if (href === "#") window.scrollTo({ top: 0, behaviour: "smooth" });
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
+// allLinks.forEach((link) => {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
+//     if (href === "#") window.scrollTo({ top: 0, behaviour: "smooth" });
+//     if (href !== "#" && href.startsWith("#")) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({ behavior: "smooth" });
+//     }
+//   });
+// });
 
 //Reveal on Scroll
 const allSections = document.querySelectorAll(".section");
