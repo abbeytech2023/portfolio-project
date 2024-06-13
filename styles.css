@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
   font-family: sans-serif;
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
