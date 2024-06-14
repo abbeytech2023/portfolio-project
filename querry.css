@@ -248,6 +248,11 @@
     gap: 3.2rem;
   }
 
+  .mobile-nav .main-nav-link:link {
+    font-size: 2.4rem;
+    padding: 1.5rem 10rem;
+  }
+
   .btn-hire-project {
     text-align: center;
     margin: 0;
