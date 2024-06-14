@@ -149,7 +149,7 @@
     align-items: center;
     position: absolute;
     opacity: 0;
-    background-color: rgba(56, 49, 49, 0.845);
+    background-color: #000;
     top: 0;
     left: 0;
     width: 100%;
@@ -168,6 +168,18 @@
     pointer-events: auto;
     transform: translateY(0);
     font-size: 3rem;
+  }
+
+  .mobile-nav .main-nav-link:link {
+    font-size: 3rem;
+    padding: 1.5rem 15rem;
+  }
+
+  .mobile-nav .main-nav-link:link:hover {
+  }
+
+  .mobile-nav .main-nav ul {
+    width: 100%;
   }
 
   .mobile-nav .btn-open-nav {
