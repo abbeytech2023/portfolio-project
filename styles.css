@@ -47,8 +47,7 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0.8rem 1rem;
-  background-color: #225252;
-  color: #fff;
+  /* background-color: #225252; */
 
   padding: 1rem 2rem;
   font-size: 2.2rem;
@@ -71,8 +70,7 @@ button {
 }
 
 .btn-hire:link {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
 }
 
 .btn:hover {
