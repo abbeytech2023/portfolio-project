@@ -46,7 +46,6 @@ button {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  /* margin-top: 1.6rem; */
   margin: 0.8rem 1rem;
   background-color: #225252;
   color: #fff;
@@ -67,7 +66,6 @@ button {
 }
 
 .btn-project {
-  background-color: transparent;
   background-color: rgba(255, 255, 255, 0.703);
   color: #000;
 }
