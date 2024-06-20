@@ -152,7 +152,7 @@ button {
 
 .inner-container {
   display: flex;
-  width: 70%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   text-align: center;
