@@ -126,7 +126,8 @@ button {
 }
 
 .con-header {
-  max-width: 140rem;
+  max-width: 190rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 4rem;
