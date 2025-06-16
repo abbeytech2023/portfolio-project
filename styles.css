@@ -404,7 +404,11 @@ h1 span {
   border-radius: 6rem;
   text-decoration: none;
   color: #fff;
-  background-color: rgb(12, 49, 49);
+  background-color: rgb(1, 30, 78);
+}
+
+.mywork-btn:hover {
+  background-color: #080f1e;
 }
 
 /* **************** About ME *************************** */
@@ -416,18 +420,14 @@ h1 span {
 .container-contact {
   max-width: 100%;
   /* height: 80rem; */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .profile-cart {
-  max-width: 120rem;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 3rem;
+  /* gap: 3rem; */
   margin-top: 5rem;
-  padding-bottom: 8rem;
+  /* padding-bottom: 8rem; */
 }
 
 .details-box div {
@@ -451,25 +451,15 @@ h1 span {
   font-size: 2.4rem;
 }
 
-.prof-img img {
-  width: 100%;
-  /* height: 12rem; */
-}
-
 .label {
   display: flex;
   gap: 7rem;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .label a:link {
   text-decoration: none;
   color: #000;
-}
-
-.label h3 {
-  width: 25rem;
-  font-size: 2.6rem;
 }
 
 .description {
@@ -479,9 +469,11 @@ h1 span {
 
 .about-me {
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
   font-size: 2.4rem;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 799px) {
@@ -504,6 +496,7 @@ h1 span {
 
   .label {
     gap: 2rem;
+    background-color: red;
   }
 
   .label h3 {
@@ -533,10 +526,6 @@ h1 span {
   .description {
     display: none;
     position: absolute;
-  }
-
-  .label h3 {
-    width: 15rem;
   }
 
   .label p {
