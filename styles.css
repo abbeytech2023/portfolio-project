@@ -483,18 +483,18 @@ h1 span {
 }
 
 .about-me {
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 6rem;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 @media (max-width: 799px) {
-  .about-me {
-    font-size: 2.1rem;
-  }
 }
 
 @media (max-width: 602px) {
@@ -528,14 +528,6 @@ h1 span {
     flex-direction: column;
   }
 
-  .about-me {
-    gap: 1.8rem;
-  }
-
-  .label {
-    gap: 2rem;
-  }
-
   .description {
     display: none;
     position: absolute;
@@ -547,22 +539,13 @@ h1 span {
 }
 
 @media (max-width: 440px) {
-  .label {
-    gap: 3rem;
-    padding: 0 3rem;
-  }
-
   .about-me {
-    font-size: 1.6rem;
-  }
-
-  .label h3 {
-    width: 11rem;
+    gap: 1.2rem;
   }
 }
 
 @media (max-width: 380px) {
-  .label {
+  /* .label {
     margin-left: 6rem;
-  }
+  } */
 }
