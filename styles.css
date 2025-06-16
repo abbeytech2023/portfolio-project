@@ -29,10 +29,10 @@ nav {
   color: #fff;
 }
 
-.theme {
+/* .theme {
   font-size: 1.6rem;
   cursor: pointer;
-}
+} */
 
 .btn-mobile-nav {
   display: none;
@@ -153,6 +153,10 @@ button {
 
 .container-hero {
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
   /* color: rgb(196, 213, 251); */
   color: #fff;
@@ -163,22 +167,23 @@ button {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
   text-align: left;
+  padding: 0 3%;
 }
 
 .inner-container h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 1.3;
-  padding: 0 3%;
   width: 60%;
+  font-size: 3rem;
 }
 
 .inner-container p {
-  padding: 0 3%;
   color: rgb(235, 241, 254);
   margin-bottom: 5rem;
   width: 50%;
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 h1 span {
@@ -217,7 +222,7 @@ h1 span {
 }
 
 .sub-title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   /* color: #fff; */
   color: rgb(1, 30, 87);
@@ -482,7 +487,6 @@ h1 span {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 2.4rem;
   margin-bottom: 6rem;
   width: 100%;
 }

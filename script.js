@@ -32,9 +32,9 @@ const logo = document.querySelector(".logo");
 
 // theme change
 
-const theme = document.querySelector(".theme");
+// const theme = document.querySelector(".theme");
 
-theme.addEventListener("click", () => {});
+// theme.addEventListener("click", () => {});
 
 //Reveal on Scroll
 const allSections = document.querySelectorAll(".section");

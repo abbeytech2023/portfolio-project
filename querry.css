@@ -1,17 +1,11 @@
 @media (max-width: 1255px) {
-  .inner-container {
-  }
-
-  .con-header {
-  }
-
   /* .btn-project:hover {
     background-color: rgb(196, 213, 251);
   } */
 
-  .btn-hire-project {
+  /* .btn-hire-project {
     margin-left: 6.5rem;
-  }
+  } */
 }
 
 @media (max-width: 1120px) {
@@ -19,8 +13,6 @@
   }
 
   .inner-container h1 {
-    font-size: 4.2rem;
-    font-weight: 600;
   }
 
   .about-col-1 {
@@ -29,9 +21,9 @@
 }
 
 @media (max-width: 924px) {
-  .inner-container {
+  /* .inner-container {
     width: 100%;
-  }
+  } */
 
   .about-me {
     gap: 2rem;
@@ -43,14 +35,7 @@
   }
 
   .inner-container h1 {
-    font-size: 4rem;
-
     /* padding: 2.5rem; */
-  }
-
-  .inner-container p {
-    font-size: 2.2rem;
-    /* padding: 1rem; */
   }
 
   /* ABOUT SECTION */
@@ -60,6 +45,14 @@
 
   .row {
     padding-right: 4rem;
+  }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
   }
 }
 
@@ -73,7 +66,6 @@
   }
 
   .inner-container h1 {
-    font-size: 3.5rem;
     /* padding: 2.5rem; */
   }
 
@@ -155,6 +147,14 @@
     display: block;
   }
 
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
+  }
+
   /* ****  About section ****** */
 
   .about-col-1 {
@@ -179,6 +179,14 @@
     padding: 0 0.6rem;
     gap: 1.8rem;
   }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -187,6 +195,14 @@
   }
   .container-hero {
     text-align: center;
+  }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
   }
 
   .main-nav-list {
@@ -200,7 +216,14 @@
 
   .btn-hire-project {
     text-align: center;
-    margin: 0;
+  }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
   }
 
   .btn {
@@ -219,6 +242,14 @@
 
   .main-nav-list {
     gap: 2.6rem;
+  }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
   }
 
   .con-header {
@@ -287,26 +318,51 @@
     font-size: 2rem;
     line-height: 1.4;
   }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
   .inner-container {
-    padding: 0 3rem;
   }
 
   .about-me {
     gap: 0.8rem;
   }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 405px) {
   .inner-container {
-    font-size: 2rem;
   }
 
   .layer {
     font-size: 1.6rem;
     line-height: 1.4;
+  }
+
+  .about-me {
+  }
+
+  .inner-container h1 {
+    width: 100%;
+  }
+
+  .inner-container p {
+    width: 100%;
   }
 }
 
