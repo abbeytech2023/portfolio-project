@@ -29,6 +29,11 @@ nav {
   color: #fff;
 }
 
+.theme {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
 .btn-mobile-nav {
   display: none;
   z-index: 3;
@@ -81,8 +86,11 @@ button {
 .logo {
   font-size: 3.2rem;
   font-weight: 700;
-  background-color: rgb(1, 30, 87);
   padding: 1rem 2rem;
+}
+
+.logo span {
+  margin-left: 0.7rem;
 }
 
 .main-nav-list {
@@ -131,7 +139,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background: linear-gradient(to right, rgb(34, 82, 82), rgba(0, 0, 0, 0.714)),
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.636)),
     url(images/Screenshot_20231126-111.png);
   background-size: auto;
   background-repeat: no-repeat;
@@ -156,19 +164,21 @@ button {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .inner-container h1 {
   margin-bottom: 3rem;
   line-height: 1.3;
   padding: 0 3%;
+  width: 60%;
 }
 
 .inner-container p {
   padding: 0 3%;
   color: rgb(235, 241, 254);
   margin-bottom: 5rem;
+  width: 50%;
 }
 
 h1 span {
@@ -471,9 +481,10 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 1.5rem;
   font-size: 2.4rem;
   margin-bottom: 6rem;
+  width: 100%;
 }
 
 @media (max-width: 799px) {
@@ -495,12 +506,11 @@ h1 span {
   }
 
   .label {
-    gap: 2rem;
-    background-color: red;
+    gap: 0.5rem;
   }
 
   .label h3 {
-    width: 15rem;
+    width: 10rem;
   }
 
   .social-link {
@@ -515,12 +525,11 @@ h1 span {
   }
 
   .about-me {
-    font-size: 1.8rem;
+    gap: 1.8rem;
   }
 
   .label {
     gap: 2rem;
-    padding: 0 3rem;
   }
 
   .description {

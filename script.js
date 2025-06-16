@@ -30,6 +30,12 @@ const logo = document.querySelector(".logo");
 //   });
 // });
 
+// theme change
+
+const theme = document.querySelector(".theme");
+
+theme.addEventListener("click", () => {});
+
 //Reveal on Scroll
 const allSections = document.querySelectorAll(".section");
 

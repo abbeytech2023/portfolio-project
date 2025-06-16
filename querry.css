@@ -32,6 +32,10 @@
   .inner-container {
     width: 100%;
   }
+
+  .about-me {
+    gap: 2rem;
+  }
 }
 @media (max-width: 867px) {
   .header {
@@ -169,6 +173,12 @@
     font-size: 2.1rem;
     line-height: 1.4;
   }
+
+  .about-me {
+    /* background: red; */
+    padding: 0 0.6rem;
+    gap: 1.8rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -195,6 +205,10 @@
 
   .btn {
     font-size: 2.4rem;
+  }
+
+  .about-me {
+    gap: 2rem;
   }
 }
 
@@ -230,6 +244,10 @@
       rgb(34, 82, 82),
       rgba(0, 0, 0, 0.744)
     );
+  }
+
+  .about-me {
+    gap: 2.2rem;
   }
 
   /* .inner-container h1 {
@@ -274,6 +292,10 @@
 @media (max-width: 450px) {
   .inner-container {
     padding: 0 3rem;
+  }
+
+  .about-me {
+    gap: 0.8rem;
   }
 }
 
