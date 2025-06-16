@@ -483,7 +483,7 @@ h1 span {
 }
 
 .about-me {
-  /* background-color: red; */
+  background-color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
