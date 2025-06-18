@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.dark-mode {
+  background-color: #000;
+  color: rgb(232, 204, 135);
+}
+
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -13,6 +18,7 @@ html {
 
 body {
   overflow-x: hidden;
+  color: #fff;
 }
 
 .container {
@@ -26,13 +32,14 @@ nav {
   align-items: center;
 
   padding: 0 3%;
-  color: #fff;
 }
 
-/* .theme {
+.theme {
   font-size: 1.6rem;
   cursor: pointer;
-} */
+  border: 1px solid #fff;
+  padding: 2px 4px;
+}
 
 .btn-mobile-nav {
   display: none;
@@ -60,7 +67,7 @@ button {
 }
 
 .btn {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .btn {
@@ -69,18 +76,22 @@ button {
   border: 1px solid #fff;
 }
 
-.btn-project {
-  background-color: rgba(255, 255, 255, 0.703);
-  color: #000;
+.btn-hire-project {
+  color: inherit;
 }
 
-.btn-hire:link {
-  color: #fff;
+.btn-project {
+  /* background-color: rgba(255, 255, 255, 0.703); */
+  color: inherit;
 }
 
 .btn:hover {
   background-color: rgba(196, 213, 251, 0.601);
   color: #000;
+}
+
+.btn-hire {
+  color: inherit;
 }
 
 .logo {
@@ -109,22 +120,21 @@ button {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  /* color: #333; */
-  /* font-weight: 500; */
   font-size: 1.8rem;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover {
-  /* border: 1px solid #fff; */
-  color: #fff;
   background-color: #011e57;
 }
 
 .main-nav-link {
   text-decoration: none;
   color: #fff;
-  /* color: #000; */
+  color: inherit;
+}
+
+.main-nav-link-dark {
 }
 
 .last-nav-link {
@@ -157,9 +167,8 @@ button {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  /* color: goldenrod; */
 
-  /* color: rgb(196, 213, 251); */
-  color: #fff;
   text-align: center;
 }
 
@@ -179,7 +188,6 @@ button {
 }
 
 .inner-container p {
-  color: rgb(235, 241, 254);
   margin-bottom: 5rem;
   width: 50%;
   font-size: 1.8rem;
@@ -187,9 +195,8 @@ button {
 }
 
 h1 span {
-  background-color: rgb(1, 30, 87);
-  color: rgb(1, 30, 87);
-  color: #fff;
+  background-color: rgb(5, 5, 26);
+
   border: 1px solid transparent;
   letter-spacing: 2px;
 }
@@ -197,6 +204,7 @@ h1 span {
 /************* ABOUT SECTION******************/
 .section-about {
   margin-top: 20rem;
+  /* color: #000; */
 }
 
 .row {
@@ -204,9 +212,9 @@ h1 span {
   justify-content: space-between;
 }
 
-#about {
+/* #about {
   color: #000;
-}
+} */
 
 .about-col-1 {
   flex-basis: 35%;
@@ -224,8 +232,9 @@ h1 span {
 .sub-title {
   font-size: 2.5rem;
   font-weight: 700;
-  /* color: #fff; */
   color: rgb(1, 30, 87);
+  color: goldenrod;
+  color: inherit;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -274,10 +283,10 @@ h1 span {
 .years {
   font-weight: 500;
   font-size: 2.2rem;
+  color: goldenrod;
 }
 
 .tab-contents ul li span {
-  color: #011e57;
   font-size: 2.2rem;
   font-weight: 500;
   /* padding-bottom: 1.5rem; */
@@ -418,8 +427,8 @@ h1 span {
   padding: 1.4rem 5rem;
   border-radius: 6rem;
   text-decoration: none;
-  color: #fff;
-  background-color: rgb(1, 30, 78);
+  color: inherit;
+  background-color: inherit;
 }
 
 .mywork-btn:hover {

@@ -32,9 +32,30 @@ const logo = document.querySelector(".logo");
 
 // theme change
 
-// const theme = document.querySelector(".theme");
+const theme = document.querySelector(".theme");
+const body = document.body;
+const mainNavLinkAll = document.querySelectorAll(".main-nav-link");
+const headerContainer = document.querySelector(".con-header");
+const mainNavList = document.querySelector("main-nav-list");
+const btnProject = document.querySelector("btn-hire-project");
 
-// theme.addEventListener("click", () => {});
+console.log(mainNavLinkAll);
+
+theme.addEventListener("click", () => {
+  theme.textContent === "Dark-Mode" ? "Light-Mode" : "Dark-Mode";
+  body.classList.toggle("dark-mode");
+  mainNavLinkAll.forEach((nav) => {
+    nav.classList.contains("dark-mode")
+      ? (nav.style.color = "transparent")
+      : none;
+    nav.classList.toggle("dark-mode");
+  });
+
+  mainNavList.classList.toggle("dark-mode");
+  btnProject.classList.toggle("dark-mode");
+
+  headerContainer.classList.toggle("dark-mode");
+});
 
 //Reveal on Scroll
 const allSections = document.querySelectorAll(".section");
