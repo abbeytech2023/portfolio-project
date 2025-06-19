@@ -1,5 +1,7 @@
 const mobileNav = document.querySelector(".btn-mobile-nav");
 const logo = document.querySelector(".logo");
+const tabLink = document.querySelector(".tab-links");
+const styles = window.getComputedStyle(tabLink, "::after");
 
 // console.log(tabLink);
 
@@ -36,25 +38,84 @@ const theme = document.querySelector(".theme");
 const body = document.body;
 const mainNavLinkAll = document.querySelectorAll(".main-nav-link");
 const headerContainer = document.querySelector(".con-header");
-const mainNavList = document.querySelector("main-nav-list");
-const btnProject = document.querySelector("btn-hire-project");
+const mainNavList = document.querySelector(".main-nav-list");
+const btnProject = document.querySelector(".btn-hire-project");
+const sectionAbout = document.querySelector(".section-about");
+const workLinks = document.querySelectorAll(".work-link");
+const subtitles = document.querySelectorAll(".sub-title");
+const years = document.querySelectorAll(".years");
+const layer = document.querySelectorAll(".layer");
+const h1 = document.querySelectorAll("h1");
+const svg = document.querySelector("svg");
 
-console.log(mainNavLinkAll);
-
+svg.style.color = "red";
 theme.addEventListener("click", () => {
-  theme.textContent === "Dark-Mode" ? "Light-Mode" : "Dark-Mode";
+  theme.textContent = "light";
+  theme.style.color = "#fff";
+  headerContainer.classList.toggle("dark-mode");
   body.classList.toggle("dark-mode");
-  mainNavLinkAll.forEach((nav) => {
-    nav.classList.contains("dark-mode")
-      ? (nav.style.color = "transparent")
-      : none;
-    nav.classList.toggle("dark-mode");
+
+  h1.forEach((heading) => {
+    if (body.classList.contains("dark-mode")) {
+      theme.textContent = "Light-Mode";
+      theme.style.color = "goldenrod";
+      heading.style.color = "goldenrod";
+    } else {
+      heading.style.color = "#fff";
+      theme.textContent = "Dark-Mode";
+      theme.style.color = "#fff";
+    }
   });
 
-  mainNavList.classList.toggle("dark-mode");
-  btnProject.classList.toggle("dark-mode");
+  workLinks.forEach((work) => {
+    if (body.classList.contains("dark-mode")) {
+      work.style.backgroundColor = "#000";
+      work.style.color = "rgb(232, 204, 135)";
+    } else {
+      work.style.backgroundColor = "blue";
+      work.style.color = "#fff";
+    }
+  });
 
-  headerContainer.classList.toggle("dark-mode");
+  mainNavLinkAll.forEach((nav) => {
+    nav.classList.toggle("dark-mode");
+    if (nav.classList.contains("dark-mode")) {
+      nav.style.color = "rgb(232, 204, 135)";
+      nav.style.backgroundColor = "none";
+    } else {
+      nav.style.color = "#fff";
+    }
+  });
+
+  subtitles.forEach((title) => {
+    body.classList.contains("dark-mode")
+      ? (title.style.color = "goldenrod")
+      : (title.style.color = "rgb(1, 30, 87)");
+  });
+
+  years.forEach((year) => {
+    body.classList.contains("dark-mode")
+      ? (year.style.color = "goldenrod")
+      : (year.style.color = "rgb(1, 30, 87)");
+  });
+
+  layer.forEach((lay) => {
+    if (body.classList.contains("dark-mode")) {
+      lay.style.color = "goldenrod";
+      lay.style.backgroundColor = "#333";
+      logo.style.color = "goldenrod";
+      mobileNav.style.color = "goldenrod";
+    } else {
+      logo.style.color = "#fff";
+      mobileNav.style.color = "#fff";
+
+      lay.style.color = "black";
+      lay.style.backgroundColor = "rgb(196, 213, 251)";
+    }
+  });
+  sectionAbout.classList.toggle("about-light-mode");
+  sectionAbout.classList.toggle("about-dark-mode");
+  console.log(containerAbout.classList);
 });
 
 //Reveal on Scroll
@@ -80,7 +141,6 @@ const hideSection = document.querySelector(".hide-section");
 console.log(hideSection);
 
 const tabContents = document.querySelectorAll(".tab-contents");
-const tabLink = document.querySelectorAll(".tab-links");
 const tabTitle = document.querySelector(".tab-titles");
 
 tabTitle.addEventListener("click", function (e) {

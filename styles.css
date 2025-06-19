@@ -39,6 +39,7 @@ nav {
   cursor: pointer;
   border: 1px solid #fff;
   padding: 2px 4px;
+  color: #fff;
 }
 
 .btn-mobile-nav {
@@ -48,6 +49,7 @@ nav {
 
 .btn-close-nav {
   display: none;
+  color: red;
 }
 
 button {
@@ -204,7 +206,16 @@ h1 span {
 /************* ABOUT SECTION******************/
 .section-about {
   margin-top: 20rem;
-  /* color: #000; */
+}
+
+.about-dark-mode {
+  background-color: #000;
+  color: rgb(232, 204, 135);
+}
+
+.about-light-mode {
+  background-color: #fff;
+  color: #000;
 }
 
 .row {
@@ -233,8 +244,6 @@ h1 span {
   font-size: 2.5rem;
   font-weight: 700;
   color: rgb(1, 30, 87);
-  color: goldenrod;
-  color: inherit;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -283,7 +292,6 @@ h1 span {
 .years {
   font-weight: 500;
   font-size: 2.2rem;
-  color: goldenrod;
 }
 
 .tab-contents ul li span {
@@ -342,6 +350,7 @@ h1 span {
   height: 0;
 
   background-color: rgb(196, 213, 251);
+  color: #000;
   font-size: 1.6rem;
   border-radius: 1rem;
   position: absolute;
