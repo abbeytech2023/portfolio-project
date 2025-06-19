@@ -36,10 +36,11 @@ const tabLink = document.querySelectorAll("tab-links");
 
 const theme = document.querySelector(".theme");
 const body = document.body;
+
 const mainNavLinkAll = document.querySelectorAll(".main-nav-link");
 const headerContainer = document.querySelector(".con-header");
 const mainNavList = document.querySelector(".main-nav-list");
-const btnProject = document.querySelector(".btn-hire-project");
+const btnHire = document.querySelector(".btn-hire");
 const sectionAbout = document.querySelector(".section-about");
 const workLinks = document.querySelectorAll(".work-link");
 const subtitles = document.querySelectorAll(".sub-title");
@@ -47,15 +48,17 @@ const years = document.querySelectorAll(".years");
 const layer = document.querySelectorAll(".layer");
 const h1 = document.querySelectorAll("h1");
 const aboutMe = document.querySelector(".about-me");
+const headerText = document.querySelector(".header-text");
+const lastNavLink = document.querySelector(".last-nav-link");
 
 theme.addEventListener("click", () => {
   theme.textContent = "light";
   theme.style.color = "#fff";
-  headerContainer.classList.toggle("dark-mode");
   body.classList.toggle("dark-mode");
 
   h1.forEach((heading) => {
     if (body.classList.contains("dark-mode")) {
+      // package.style.color = "#fff";
       theme.textContent = "Light-Mode";
       theme.style.color = "goldenrod";
       btnSeeMore.style.color = "goldenrod";
@@ -72,20 +75,24 @@ theme.addEventListener("click", () => {
   workLinks.forEach((work) => {
     if (body.classList.contains("dark-mode")) {
       work.style.backgroundColor = "#000";
-      work.style.color = "rgb(232, 204, 135)";
+      work.style.color = "#fff";
+      headerText.style.color = "#fff";
+      lastNavLink.style.backgroundColor = "rgb(221, 73, 19)";
+      btnHire.style.backgroundColor = "rgb(221, 73, 19)";
     } else {
       work.style.backgroundColor = "blue";
+
       work.style.color = "#fff";
+      lastNavLink.style.backgroundColor = "#225252";
+      btnHire.style.backgroundColor = "#225252";
     }
   });
 
   mainNavLinkAll.forEach((nav) => {
     nav.classList.toggle("dark-mode");
     if (nav.classList.contains("dark-mode")) {
-      nav.style.color = "rgb(232, 204, 135)";
       nav.style.backgroundColor = "none";
     } else {
-      nav.style.color = "#fff";
     }
   });
 
@@ -118,7 +125,6 @@ theme.addEventListener("click", () => {
   });
   sectionAbout.classList.toggle("about-light-mode");
   sectionAbout.classList.toggle("about-dark-mode");
-  console.log(containerAbout.classList);
 });
 
 //Reveal on Scroll

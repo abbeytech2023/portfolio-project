@@ -270,7 +270,7 @@
   .con-header {
     background: linear-gradient(
       to right,
-      rgb(34, 82, 82),
+      /* rgb(34, 82, 82), */ rgba(0, 0, 0, 0.744),
       rgba(0, 0, 0, 0.744)
     );
   }
@@ -279,17 +279,15 @@
     gap: 2.2rem;
   }
 
-  /* .inner-container h1 {
-    background-color: red;
+  .inner-container h1 {
   }
 
   .inner-container {
-    background-color: green;
   }
 
   .inner-container p {
-    background-color: blue;
-  } */
+  }
+  */
 
   /* ******** About section  ************ */
   .row {

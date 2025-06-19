@@ -49,7 +49,7 @@ nav {
 
 .btn-close-nav {
   display: none;
-  color: red;
+  color: rgb(143, 54, 16);
 }
 
 button {
@@ -76,10 +76,11 @@ button {
   border-radius: 2rem;
   text-transform: uppercase;
   border: 1px solid #fff;
+  color: #fff;
 }
 
 .btn-hire-project {
-  color: inherit;
+  color: #fff;
 }
 
 .btn-project {
@@ -93,6 +94,8 @@ button {
 }
 
 .btn-hire {
+  background-color: #225252;
+
   color: inherit;
 }
 
@@ -127,16 +130,12 @@ button {
 }
 
 .main-nav-link:hover {
-  background-color: #011e57;
+  background-color: rgb(77, 22, 2);
 }
 
 .main-nav-link {
   text-decoration: none;
   color: #fff;
-  color: inherit;
-}
-
-.main-nav-link-dark {
 }
 
 .last-nav-link {
@@ -210,7 +209,7 @@ h1 span {
 
 .about-dark-mode {
   background-color: #000;
-  color: rgb(232, 204, 135);
+  color: #fff;
 }
 
 .about-light-mode {
@@ -373,10 +372,6 @@ h1 span {
 .layer h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-}
-
-.layer p span {
-  color: red;
 }
 
 .sticky nav {
