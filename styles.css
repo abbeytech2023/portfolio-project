@@ -271,7 +271,6 @@ h1 span {
   content: "";
   width: 0;
   height: 3px;
-  background: rgb(1, 30, 87);
   position: absolute;
   left: 0;
   bottom: -8px;

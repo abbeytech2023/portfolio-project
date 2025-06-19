@@ -1,6 +1,7 @@
 const mobileNav = document.querySelector(".btn-mobile-nav");
 const logo = document.querySelector(".logo");
 const btnSeeMore = document.querySelector(".mywork-btn");
+const tabLink = document.querySelectorAll("tab-links");
 
 // console.log(tabLink);
 
