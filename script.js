@@ -1,7 +1,6 @@
 const mobileNav = document.querySelector(".btn-mobile-nav");
 const logo = document.querySelector(".logo");
-const tabLink = document.querySelector(".tab-links");
-const styles = window.getComputedStyle(tabLink, "::after");
+const btnSeeMore = document.querySelector(".mywork-btn");
 
 // console.log(tabLink);
 
@@ -46,9 +45,8 @@ const subtitles = document.querySelectorAll(".sub-title");
 const years = document.querySelectorAll(".years");
 const layer = document.querySelectorAll(".layer");
 const h1 = document.querySelectorAll("h1");
-const svg = document.querySelector("svg");
+const aboutMe = document.querySelector(".about-me");
 
-svg.style.color = "red";
 theme.addEventListener("click", () => {
   theme.textContent = "light";
   theme.style.color = "#fff";
@@ -59,11 +57,14 @@ theme.addEventListener("click", () => {
     if (body.classList.contains("dark-mode")) {
       theme.textContent = "Light-Mode";
       theme.style.color = "goldenrod";
+      btnSeeMore.style.color = "goldenrod";
+      btnSeeMore.style.backgroundColor = "unset";
       heading.style.color = "goldenrod";
     } else {
       heading.style.color = "#fff";
       theme.textContent = "Dark-Mode";
       theme.style.color = "#fff";
+      btnSeeMore.style.color = "black";
     }
   });
 
@@ -105,10 +106,11 @@ theme.addEventListener("click", () => {
       lay.style.backgroundColor = "#333";
       logo.style.color = "goldenrod";
       mobileNav.style.color = "goldenrod";
+      aboutMe.style.backgroundColor = "goldenrod";
     } else {
       logo.style.color = "#fff";
       mobileNav.style.color = "#fff";
-
+      aboutMe.style.backgroundColor = "#fff";
       lay.style.color = "black";
       lay.style.backgroundColor = "rgb(196, 213, 251)";
     }
@@ -198,7 +200,6 @@ mobileNav.addEventListener("click", function (e) {
   navigation.classList.toggle("mobile-nav");
 });
 
-const btnSeeMore = document.querySelector(".mywork-btn");
 const work = document.querySelectorAll(".work");
 const workShow = document.querySelectorAll(".work-show");
 

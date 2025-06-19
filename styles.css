@@ -437,7 +437,7 @@ h1 span {
   border-radius: 6rem;
   text-decoration: none;
   color: inherit;
-  background-color: inherit;
+  background-color: #080f1e;
 }
 
 .mywork-btn:hover {
@@ -505,11 +505,13 @@ h1 span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  gap: 2rem;
+
+  padding: 4rem 2rem;
+
+  /* background-color: rgb(56, 55, 55); */
+
+  width: 100%;
 }
 
 @media (max-width: 799px) {
@@ -558,7 +560,7 @@ h1 span {
 
 @media (max-width: 440px) {
   .about-me {
-    gap: 1.2rem;
+    gap: 1.8rem;
   }
 }
 
