@@ -72,7 +72,7 @@ theme.addEventListener("click", () => {
       heading.style.color = "#fff";
       theme.textContent = "Dark-Mode";
       theme.style.color = "#fff";
-      btnSeeMore.style.color = "black";
+      btnSeeMore.style.color = "#fff";
       btnSeeMore.style.backgroundColor = "#225252";
       mobileNav.style.backgroundColor = "#225252";
     }
