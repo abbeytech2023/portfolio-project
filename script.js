@@ -122,7 +122,7 @@ theme.addEventListener("click", () => {
       // styles.backgroundColor = "goldenrod";
       logo.style.color = "goldenrod";
       mobileNav.style.color = "goldenrod";
-      aboutMe.style.backgroundColor = "goldenrod";
+      aboutMe.style.backgroundColor = "rgb(90, 66, 2)";
     } else {
       logo.style.color = "#fff";
       mobileNav.style.color = "#fff";
