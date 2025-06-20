@@ -80,6 +80,7 @@ button {
 }
 
 .btn-hire-project {
+  margin-top: 7rem;
   color: #fff;
 }
 
@@ -149,7 +150,7 @@ button {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 12rem;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.636)),
     url(images/Screenshot_20231126-111.png);
   background-size: auto;
@@ -167,8 +168,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
+
   height: 100vh;
-  /* color: goldenrod; */
 
   text-align: center;
 }

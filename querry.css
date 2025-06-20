@@ -28,6 +28,10 @@
   .about-me {
     gap: 2rem;
   }
+
+  .btn-hire-project {
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 867px) {
   .header {
@@ -53,6 +57,10 @@
 
   .inner-container p {
     width: 100%;
+  }
+
+  .btn-hire-project {
+    margin-top: 4rem;
   }
 }
 
@@ -267,7 +275,7 @@
   }
 
   .con-header {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 9), rgba(0, 0, 0, 9));
   }
 
   .about-me {
