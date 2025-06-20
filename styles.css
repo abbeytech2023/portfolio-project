@@ -44,6 +44,7 @@ nav {
 
 .btn-mobile-nav {
   display: none;
+  background-color: #225252;
   z-index: 3;
 }
 
@@ -428,8 +429,8 @@ h1 span {
   padding: 1.4rem 5rem;
   border-radius: 6rem;
   text-decoration: none;
-  color: inherit;
-  background-color: #080f1e;
+  color: #fff;
+  background-color: #225252;
 }
 
 .mywork-btn:hover {

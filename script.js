@@ -64,14 +64,17 @@ theme.addEventListener("click", () => {
     if (body.classList.contains("dark-mode")) {
       theme.textContent = "Light-Mode";
       theme.style.color = "goldenrod";
-      btnSeeMore.style.color = "goldenrod";
-      btnSeeMore.style.backgroundColor = "unset";
+      btnSeeMore.style.color = "#fff";
+      btnSeeMore.style.backgroundColor = "rgb(221, 73, 19)";
+      mobileNav.style.backgroundColor = "rgb(221, 73, 19)";
       heading.style.color = "goldenrod";
     } else {
       heading.style.color = "#fff";
       theme.textContent = "Dark-Mode";
       theme.style.color = "#fff";
       btnSeeMore.style.color = "black";
+      btnSeeMore.style.backgroundColor = "#225252";
+      mobileNav.style.backgroundColor = "#225252";
     }
   });
 
