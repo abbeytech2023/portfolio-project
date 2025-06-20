@@ -222,10 +222,6 @@ h1 span {
   justify-content: space-between;
 }
 
-/* #about {
-  color: #000;
-} */
-
 .about-col-1 {
   flex-basis: 35%;
 }
@@ -247,7 +243,7 @@ h1 span {
   margin-bottom: 3rem;
 }
 
-.sub-title-desrription {
+.sub-title-description {
   font-size: 2.5rem;
 }
 

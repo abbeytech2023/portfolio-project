@@ -157,9 +157,9 @@
 
   /* ****  About section ****** */
 
-  .about-col-1 {
+  /* .about-col-1 {
     flex-basis: 60%;
-  }
+  } */
 
   .tab-contents ul li {
     font-size: 2.3rem;
@@ -175,7 +175,6 @@
   }
 
   .about-me {
-    /* background: red; */
     gap: 1.8rem;
   }
 
@@ -268,11 +267,7 @@
   }
 
   .con-header {
-    background: linear-gradient(
-      to right,
-      /* rgb(34, 82, 82), */ rgba(0, 0, 0, 0.744),
-      rgba(0, 0, 0, 0.744)
-    );
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   }
 
   .about-me {
@@ -287,7 +282,6 @@
 
   .inner-container p {
   }
-  */
 
   /* ******** About section  ************ */
   .row {

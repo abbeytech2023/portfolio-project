@@ -1,9 +1,13 @@
 const mobileNav = document.querySelector(".btn-mobile-nav");
 const logo = document.querySelector(".logo");
 const btnSeeMore = document.querySelector(".mywork-btn");
-const tabLink = document.querySelectorAll("tab-links");
+const tabLink = document.querySelectorAll(".tab-links");
+const activeLink = document.querySelector(".active-link");
+const tabActiveLink = document.querySelector(".tab-links.active-link");
+const styles = window.getComputedStyle(tabActiveLink, "::after");
+console.log(styles.content);
 
-// console.log(tabLink);
+console.log(styles.backgroundColor);
 
 // Smooth scroll into section
 // document
@@ -58,7 +62,6 @@ theme.addEventListener("click", () => {
 
   h1.forEach((heading) => {
     if (body.classList.contains("dark-mode")) {
-      // package.style.color = "#fff";
       theme.textContent = "Light-Mode";
       theme.style.color = "goldenrod";
       btnSeeMore.style.color = "goldenrod";
@@ -79,6 +82,7 @@ theme.addEventListener("click", () => {
       headerText.style.color = "#fff";
       lastNavLink.style.backgroundColor = "rgb(221, 73, 19)";
       btnHire.style.backgroundColor = "rgb(221, 73, 19)";
+      tabActiveLink.style.setProperty("rgb(1, 30, 87)", "goldenrod");
     } else {
       work.style.backgroundColor = "blue";
 
@@ -112,6 +116,7 @@ theme.addEventListener("click", () => {
     if (body.classList.contains("dark-mode")) {
       lay.style.color = "goldenrod";
       lay.style.backgroundColor = "#333";
+      // styles.backgroundColor = "goldenrod";
       logo.style.color = "goldenrod";
       mobileNav.style.color = "goldenrod";
       aboutMe.style.backgroundColor = "goldenrod";
@@ -154,7 +159,9 @@ const tabTitle = document.querySelector(".tab-titles");
 
 tabTitle.addEventListener("click", function (e) {
   //Removing the default active-link
-  tabLink.forEach((tab) => tab.classList.remove("active-link"));
+  tabLink.forEach((tab) => {
+    tab.classList.remove("active-link");
+  });
   // e.target.closest is used to select the closest tablink that is clicked on
   e.target.closest(".tab-links").classList.add("active-link");
 
