@@ -56,8 +56,6 @@ const headerText = document.querySelector(".header-text");
 const lastNavLink = document.querySelector(".last-nav-link");
 
 theme.addEventListener("click", () => {
-  theme.textContent = "light";
-  theme.style.color = "#fff";
   body.classList.toggle("dark-mode");
 
   h1.forEach((heading) => {
@@ -66,7 +64,7 @@ theme.addEventListener("click", () => {
       theme.style.color = "goldenrod";
       btnSeeMore.style.color = "#fff";
       btnSeeMore.style.backgroundColor = "rgb(221, 73, 19)";
-      mobileNav.style.backgroundColor = "rgb(221, 73, 19)";
+      // mobileNav.style.backgroundColor = "rgb(221, 73, 19)";
       heading.style.color = "goldenrod";
     } else {
       heading.style.color = "#fff";
@@ -74,7 +72,7 @@ theme.addEventListener("click", () => {
       theme.style.color = "#fff";
       btnSeeMore.style.color = "#fff";
       btnSeeMore.style.backgroundColor = "#225252";
-      mobileNav.style.backgroundColor = "#225252";
+      // mobileNav.style.backgroundColor = "#225252";
     }
   });
 

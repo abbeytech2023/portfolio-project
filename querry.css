@@ -277,7 +277,7 @@
   .con-header {
     background: linear-gradient(
       to right,
-      hsla(180, 41%, 23%, 0.869),
+      rgba(0, 0, 0, 0.869),
       rgba(0, 0, 0, 9)
     );
   }
