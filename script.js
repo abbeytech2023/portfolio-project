@@ -55,6 +55,10 @@ const aboutMe = document.querySelector(".about-me");
 const headerText = document.querySelector(".header-text");
 const lastNavLink = document.querySelector(".last-nav-link");
 
+console.log(headerText);
+
+// body.addEventListener(() => {});
+
 theme.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
 
@@ -115,7 +119,7 @@ theme.addEventListener("click", () => {
 
   layer.forEach((lay) => {
     if (body.classList.contains("dark-mode")) {
-      lay.style.color = "goldenrod";
+      lay.style.color = "rgba(229, 200, 120, 1)";
       lay.style.backgroundColor = "#333";
       // styles.backgroundColor = "goldenrod";
       logo.style.color = "goldenrod";
